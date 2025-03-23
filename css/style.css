@@ -9735,6 +9735,10 @@ h6,
   .row-background {
     height: 375px;
   }
+
+  .text-logo {
+    font-size: 18px;
+  }
 }
 
 .map-overlay {
@@ -9753,4 +9757,23 @@ h6,
 .map-overlay .text {
   color: #fff !important;
   text-align: center;
+}
+
+.navbar-nav {
+  padding: 0 !important;
+    flex-direction: row;
+}
+
+.navbar-nav .nav-link {
+  padding-left: 0 !important;
+}
+
+.navbar-toggler {
+  display: none !important;
+}
+
+@media(min-width:768px) {
+  .navbar-mobile {
+    display: none;
+  }
 }
