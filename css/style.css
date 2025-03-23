@@ -61,7 +61,7 @@ body {
   line-height: 1.5;
   color: #555555;
   text-align: left;
-  background-color: #FFFBF2;
+  background-color: #FFF;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -441,7 +441,7 @@ h6, .h6 {
 
 @media (max-width: 1200px) {
   .display-2 {
-    font-size: calc(1.675rem + 5.1vw) ;
+    font-size: 24px ;
   }
 }
 
@@ -9529,7 +9529,7 @@ h6,
   padding-right: 15px;
   font-weight: bold;
   letter-spacing: 1px;
-  color: #FFFBF2;
+  color: #000;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
@@ -9651,4 +9651,106 @@ h6,
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.wrap-card {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.card-img {
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.text {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.wrap-card:hover .card-img {
+  transform: scale(1.1);
+}
+
+.wrap-card:hover .overlay {
+  opacity: 1;
+}
+
+@media(max-width: 768px) {
+  .wrap-card .overlay {
+    opacity: 1;
+  }
+}
+
+.row-background {
+  /* background-image: url("../img/bg-1.jpg"); */
+  height: 500px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.outlet-content {
+  background-image: url("../img/bg-3.webp");
+  height: 750px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.outlet-map {
+  background-image: url("../img/bg-map.png");
+  height: 750px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 576px) {
+  .outlet-map, .outlet-content {
+    height: 375px;
+  }
+
+  .row-background {
+    height: 375px;
+  }
+}
+
+.map-overlay {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  /* background: rgba(251, 243, 185, .7); */
+}
+
+.map-overlay .text {
+  color: #fff !important;
+  text-align: center;
 }
