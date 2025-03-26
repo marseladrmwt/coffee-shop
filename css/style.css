@@ -9777,3 +9777,19 @@ h6,
     display: none;
   }
 }
+
+.page-filter {
+  background-image: url(../img/filter-series/bg-filter.jpeg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size:cover;
+  min-height: 120vh;
+}
+
+@media(max-width:768px) {
+  .page-filter {
+    background-size: contain;
+    min-height: 100px;
+  }
+}
+
