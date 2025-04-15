@@ -9779,18 +9779,14 @@ h6,
 }
 
 .page-filter {
-  background-image: url(../img/filter-series/bg-filter.jpeg);
+  /* background-image: url(../img/filter-series/bg-filter.jpeg);
   background-position: top;
   background-repeat: no-repeat;
   background-size:cover;
-  min-height: 120vh;
+  min-height: 120vh; */
 }
 
 @media(max-width:768px) {
-  .page-filter {
-    background-size: cover;
-    min-height: 280px;
-  }
 
   .section-product .wrap-card .overlay {
     top: 118px;
@@ -9801,5 +9797,18 @@ h6,
     font-size: 12px;
     padding: 10px;
   }
+}
+
+.proses-1 {
+  border-radius: 5px;
+  width: 100%;
+  height: 400px; 
+  overflow: hidden;
+}
+
+.proses-1 img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
 }
 
